@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
+    self.window.rootViewController = nav;
+    
+    [self configLanguage];
+
     return YES;
+}
+
+//MARK:-初始化多语言设置
+- (void)configLanguage {
+    
+    NSString *language = [[NSUserDefaults standardUserDefaults] objectForKey:kCurrentLanguage];
+    if (language == nil) {
+        [[TTLanguageTool sharedInstance] changeLanguageAction:nil];
+    } else {
+        [[TTLanguageTool sharedInstance] changeLanguageAction:language];
+    }
 }
 
 

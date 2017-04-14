@@ -1,0 +1,11 @@
+/* 
+  Chinese.strings
+  TTSwitchLanguageDemo
+
+  Created by zhangliangwang on 17/4/13.
+  Copyright © 2017年 zhangliangwang. All rights reserved.
+*/
+
+"Person" = "个人中心";
+"HomePage" = "首页";
+"Language" = "多语言";

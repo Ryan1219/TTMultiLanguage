@@ -14,6 +14,11 @@
 		42DDC31A1E9F9FA400139402 /* TTSwitchLanguageDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42DDC3181E9F9FA400139402 /* TTSwitchLanguageDemo.xcdatamodeld */; };
 		42DDC31C1E9F9FA400139402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DDC31B1E9F9FA400139402 /* Assets.xcassets */; };
 		42DDC31F1E9F9FA400139402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DDC31D1E9F9FA400139402 /* LaunchScreen.storyboard */; };
+		42DDC3281E9F9FBF00139402 /* TTLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DDC3271E9F9FBF00139402 /* TTLanguageTool.m */; };
+		42DDC32B1E9F9FD500139402 /* TTLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DDC32A1E9F9FD500139402 /* TTLanguageViewController.m */; };
+		42DDC32E1E9F9FE400139402 /* TTPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DDC32D1E9F9FE400139402 /* TTPersonViewController.m */; };
+		42DDC3321E9FAB0300139402 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42DDC3311E9FAB0300139402 /* English.strings */; };
+		42DDC3341E9FAB1500139402 /* Chinese.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42DDC3331E9FAB1500139402 /* Chinese.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,15 @@
 		42DDC31B1E9F9FA400139402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DDC31E1E9F9FA400139402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DDC3201E9F9FA400139402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DDC3261E9F9FBF00139402 /* TTLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLanguageTool.h; sourceTree = "<group>"; };
+		42DDC3271E9F9FBF00139402 /* TTLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLanguageTool.m; sourceTree = "<group>"; };
+		42DDC3291E9F9FD500139402 /* TTLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLanguageViewController.h; sourceTree = "<group>"; };
+		42DDC32A1E9F9FD500139402 /* TTLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLanguageViewController.m; sourceTree = "<group>"; };
+		42DDC32C1E9F9FE400139402 /* TTPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPersonViewController.h; sourceTree = "<group>"; };
+		42DDC32D1E9F9FE400139402 /* TTPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPersonViewController.m; sourceTree = "<group>"; };
+		42DDC32F1E9FA07E00139402 /* TTSwitchLanguage.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTSwitchLanguage.pch; sourceTree = "<group>"; };
+		42DDC3311E9FAB0300139402 /* English.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
+		42DDC3331E9FAB1500139402 /* Chinese.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Chinese.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,14 @@
 				42DDC3101E9F9FA400139402 /* AppDelegate.m */,
 				42DDC3121E9F9FA400139402 /* ViewController.h */,
 				42DDC3131E9F9FA400139402 /* ViewController.m */,
+				42DDC32C1E9F9FE400139402 /* TTPersonViewController.h */,
+				42DDC32D1E9F9FE400139402 /* TTPersonViewController.m */,
+				42DDC3291E9F9FD500139402 /* TTLanguageViewController.h */,
+				42DDC32A1E9F9FD500139402 /* TTLanguageViewController.m */,
+				42DDC3261E9F9FBF00139402 /* TTLanguageTool.h */,
+				42DDC3271E9F9FBF00139402 /* TTLanguageTool.m */,
+				42DDC32F1E9FA07E00139402 /* TTSwitchLanguage.pch */,
+				42DDC3301E9FAAEC00139402 /* Language */,
 				42DDC3151E9F9FA400139402 /* Main.storyboard */,
 				42DDC31B1E9F9FA400139402 /* Assets.xcassets */,
 				42DDC31D1E9F9FA400139402 /* LaunchScreen.storyboard */,
@@ -80,6 +102,15 @@
 				42DDC30D1E9F9FA400139402 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42DDC3301E9FAAEC00139402 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				42DDC3311E9FAB0300139402 /* English.strings */,
+				42DDC3331E9FAB1500139402 /* Chinese.strings */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DDC3341E9FAB1500139402 /* Chinese.strings in Resources */,
 				42DDC31F1E9F9FA400139402 /* LaunchScreen.storyboard in Resources */,
+				42DDC3321E9FAB0300139402 /* English.strings in Resources */,
 				42DDC31C1E9F9FA400139402 /* Assets.xcassets in Resources */,
 				42DDC3171E9F9FA400139402 /* Main.storyboard in Resources */,
 			);
@@ -153,10 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DDC3281E9F9FBF00139402 /* TTLanguageTool.m in Sources */,
 				42DDC31A1E9F9FA400139402 /* TTSwitchLanguageDemo.xcdatamodeld in Sources */,
 				42DDC3141E9F9FA400139402 /* ViewController.m in Sources */,
 				42DDC3111E9F9FA400139402 /* AppDelegate.m in Sources */,
+				42DDC32B1E9F9FD500139402 /* TTLanguageViewController.m in Sources */,
 				42DDC30E1E9F9FA400139402 /* main.m in Sources */,
+				42DDC32E1E9F9FE400139402 /* TTPersonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +312,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TTSwitchLanguageDemo/TTSwitchLanguage.pch;
 				INFOPLIST_FILE = TTSwitchLanguageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomtop.TTSwitchLanguageDemo;
@@ -287,6 +325,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TTSwitchLanguageDemo/TTSwitchLanguage.pch;
 				INFOPLIST_FILE = TTSwitchLanguageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomtop.TTSwitchLanguageDemo;
@@ -313,6 +353,7 @@
 				42DDC3251E9F9FA400139402 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

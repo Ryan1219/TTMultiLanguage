@@ -1,0 +1,28 @@
+//
+//  TTSwitchLanguage.pch
+//  TTSwitchLanguageDemo
+//
+//  Created by zhangliangwang on 17/4/13.
+//  Copyright © 2017年 zhangliangwang. All rights reserved.
+//
+
+#ifndef TTSwitchLanguage_pch
+#define TTSwitchLanguage_pch
+
+
+#define kCurrentLanguage @"currentLanguage"
+#define kServiceLanguage @"serviceLanguage"
+
+#import "TTLanguageTool.h"
+
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TTSwitchLanguage_pch */
